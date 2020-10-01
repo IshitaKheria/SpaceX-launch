@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Monoton&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background-color: black;
+  color: rgb(132, 198, 209);
+  font-size: 1.5rem;
+}
+
+.homeDisplay{
+  display: flex;
+  flex-direction: column;
+}
+
+.cardComponent, .cardComponentDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem;
+  border-color: cyan;
+  border-radius: 4px;
+  font-size: 66%;
+  flex-wrap: wrap;
+  box-shadow: 0 0 5px rgb(28, 255, 255),
+              0 0 15px rgb(28, 255, 255),
+              0 0 30px rgb(28, 255, 255),
+              0 0 70px rgb(28, 255, 255);
+  
+}
+
+.cardImage{
+  padding: 2rem;
+  margin: 1rem;
+}
+
+a,td{
+  text-decoration: none;
+  color: aqua;
+}
+
+.footer{
+  text-align: center;
+  margin: 35px;
+} 
+.header{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Monoton', cursive;
+  font-size: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailHead{
+  font-family: 'Black Ops One', cursive;
+  text-align: center;
+}
+
+table,th,td,tr{
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.DateContent{
+  display:flex;
+  flex-direction: row;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+.DateBox {
+  display:flex;
+  flex-direction: column;
+  width: 380px;
+  border-color: cyan;
+  box-shadow: 0 0 5px rgb(28, 255, 255),
+              0 0 15px rgb(28, 255, 255),
+              0 0 30px rgb(28, 255, 255);
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  color: black;
+  background-color: cyan;
+}
+
+.Date{
+  display:flex;
+  flex-direction: row;
+}
+
+.button{
+  background-color: black;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px){
+
+  .cardComponent, .cardComponentDetails {
+    margin: 1rem;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+  }
+
+  .cardImage{
+    padding: 0rem;
+    margin: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 950px){
+  .header{
+    font-size: 7rem;
+  }
+  .homeDisplay{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 3rem;
+  }
+  .cardComponent{
+    max-width: 360px;
+    font-size: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+}
